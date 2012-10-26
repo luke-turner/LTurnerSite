@@ -26,27 +26,47 @@ h3 code {
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 
-body > .navbar {
+.navbar {
   font-size: 13px;
 }
 
 /* Change the docs' brand */
-body > .navbar .brand {
+.navbar .brand {
   padding-right: 0;
   padding-left: 0;
   margin-left: 20px;
-  float: right;
+  float: left;
   font-weight: bold;
-  color: #000;
+  color: #fff;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
           transition: all .2s linear;
 }
-body > .navbar .brand:hover {
+.navbar .brand:hover {
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.4);
 }
+
+.navbar .navbar-inner{
+  background: #ca0000;
+  background: -moz-linear-gradient(top,  #ca0000 0%, #ab0000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ca0000), color-stop(100%,#ab0000));
+  background: -webkit-linear-gradient(top,  #ca0000 0%,#ab0000 100%);
+  background: -o-linear-gradient(top,  #ca0000 0%,#ab0000 100%);
+  background: -ms-linear-gradient(top,  #ca0000 0%,#ab0000 100%);
+  background: linear-gradient(to bottom,  #ca0000 0%,#ab0000 100%);
+  -filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0000', endColorstr='#ab0000',GradientType=0 );
+}
+
+.navbar .nav {
+  float: right;
+}
+
+.navbar .nav > li > a {
+    padding: 15px;
+}
+
 
 
 /* Sections
@@ -255,6 +275,7 @@ hr.soften {
 .home-menu {
   text-align: center;
   color: #5a5a5a;
+  margin-top: 50px;
 }
 
 .home-menu h2 {
@@ -266,7 +287,6 @@ hr.soften {
   display: block;
   margin: 0 auto 30px;
 }
-
 
 
 /* Footer
