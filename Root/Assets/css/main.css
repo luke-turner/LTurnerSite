@@ -67,7 +67,29 @@ h3 code {
     padding: 15px;
 }
 
+.nav-icon {
+  padding-left: 60px;
+}
 
+.nav-icon.home {
+ background: url('../img/home-icon.png') no-repeat 0px 9px;
+}
+
+.nav-icon.about {
+ background: url('../img/about-me-icon.png') no-repeat 0px 9px;
+}
+
+.nav-icon.photography {
+ background: url('../img/photography-icon.png') no-repeat 0px 9px;
+}
+
+.nav-icon.3d {
+ background: url('../img/3d-artwork-icon.png') no-repeat 0px 9px;
+}
+
+.nav-icon.contact {
+ background: url('../img/contact-me-icon.png') no-repeat 0px 9px;
+}
 
 /* Sections
 -------------------------------------------------- */
