@@ -43,7 +43,7 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active">
-                <a href=".index.html" class="nav-icon home"><span class="invisible">Home</span></a>
+                <a href="#index.html" class="nav-icon home" id="homepage"></a><span id="onhover">Home</span>
               </li>
               <li class="">
                 <a href="./about-me.html" class="nav-icon about"><span class="invisible">About Me</span></a>
@@ -106,8 +106,13 @@
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p class="pull-right"><a href="#">Icons</a></p>
        
+        <p class="pull-right"><a href="#">Icons</a>
+        <img src="assets/img/twitter-icon-edit.png">
+        <img src="assets/img/facebook-icon-edit.png">
+        <img src="assets/img/gmail-icon-edit.png">
+        </p>
+      
       </div>
     </footer>
 
@@ -134,7 +139,17 @@
     <script src="assets/js/bootstrap-affix.js"></script>
     <script src="assets/js/application.js"></script>
 
+    <script>
+$(document).ready(function() {
+$('#home').css('opacity', 0);
+    $('#homepage').hover( function(){
+      $('#home').slide()
 
+    });
+
+    });
+
+    </script>
 
   </body>
 </html>

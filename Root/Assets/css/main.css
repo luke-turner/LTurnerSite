@@ -57,6 +57,7 @@ h3 code {
   background: -ms-linear-gradient(top,  #ca0000 0%,#ab0000 100%);
   background: linear-gradient(to bottom,  #ca0000 0%,#ab0000 100%);
   -filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ca0000', endColorstr='#ab0000',GradientType=0 );
+  height:50px;
 }
 
 .navbar .nav {
@@ -73,6 +74,9 @@ h3 code {
 
 .nav-icon.home {
  background: url('../img/home-icon.png') no-repeat 15px 9px;
+ width:26px;
+ height:20px;
+ display:inline-block;
 }
 
 .nav-icon.about {
@@ -99,6 +103,17 @@ h3 code {
 .invisible
 {
   opacity:0;
+}
+
+.onhover{
+  display:none;
+  margin-left:5px;
+  display:inline-block;
+  position: relative;
+  vertical-align: top;
+  padding-top: 15px;
+  color:#fff;
+  background-color:#f00;
 }
 
 /* Sections
